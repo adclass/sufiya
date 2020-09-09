@@ -23,7 +23,6 @@ body{
 
 /* =============================  banner start   ===================================== */
 .banner{
-    position: relative;
     background-image: url('../images/banner1.jpg');
     width: 100%;
     height: 90vh;
@@ -54,6 +53,14 @@ body{
 .fa-5x{
     color:#2a71bd;
 }
+.fa-5x{
+    border:1px solid #2a71bd;
+    padding:30px;
+    border-radius:50%;
+    background-color:
+}
+
+
 
 
 
@@ -78,16 +85,18 @@ body{
 
 
 /*================================== media query max-width 768 start ======================== */
-.banner-content h1{
-    font-size: 60px;
-    font-family: 'roboto', sans-serif;
-    font-weight: 900;
-    text-shadow: 1px 1px 2px #fff;
+@media screen and (max-width:768px){
+    .banner-content h1{
+        font-size: 50px;
+        font-family: 'roboto', sans-serif;
+        font-weight: 900;
+        text-shadow: 1px 1px 2px #fff;
+    }
+    .banner-content p{
+        font-size:20px;
+    }
+    
 }
-.banner-content p{
-    font-size:20px;
-}
-
 
 /*================================== media query max-width 768 end ======================== */
 
@@ -95,4 +104,33 @@ body{
 
 
 /*================================== media query max-width 576 start ======================== */
+@media screen and (max-width:576px){
+    .banner{
+        width:100%;
+        background-image: url('../images/banner1.jpg');
+        width: 100%;
+        height: 90vh;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner-content h1{
+        font-size: 30px;
+        font-family: 'roboto', sans-serif;
+        font-weight: 900;
+        text-shadow: 1px 1px 2px #fff;
+    }
+    .banner-content p{
+        font-size:20px;
+    }
+    .our-service{
+        padding:40px;
+    }
+    .box{
+        margin-top:20px
+    }
+
+}
 /*================================== media query max-width 576 end ======================== */
